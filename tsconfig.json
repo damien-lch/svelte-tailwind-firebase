@@ -19,7 +19,8 @@
       "$/*": ["./src/lib/*"],
       "$views/*": ["./src/lib/views/*"],
       "$plugins/*": ["./src/lib/plugins/*"],
-      "$stores/*": ["./src/lib/stores/*"]
+      "$stores/*": ["./src/lib/stores/*"],
+      "$components/*": ["./src/lib/components/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],

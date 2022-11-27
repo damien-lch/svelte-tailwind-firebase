@@ -11,6 +11,7 @@ export default defineConfig({
       $views: path.resolve(__dirname, "./src/lib/views"),
       $plugins: path.resolve(__dirname, "./src/lib/plugins"),
       $stores: path.resolve(__dirname, "./src/lib/stores"),
+      $components: path.resolve(__dirname, "./src/lib/components"),
     },
   },
 });

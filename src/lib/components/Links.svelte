@@ -1,0 +1,9 @@
+<div>
+  <a
+    href="https://github.com/neiwad/svelte-tailwind-firebase"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Github
+  </a>
+</div>
