@@ -44,10 +44,10 @@ On the overview page, you will see an iOs, an Android and a Web buttons just und
 ```javascript
 const firebaseConfig = {
   apiKey: ******,
-  authDomain: ******,,
-  projectId: ******,,
-  storageBucket: ******,,
-  messagingSenderId: ******,,
+  authDomain: ******,
+  projectId: ******,
+  storageBucket: ******,
+  messagingSenderId: ******,
   appId: ******,
 };
 ```
