@@ -9,6 +9,8 @@ export default defineConfig({
     alias: {
       $: path.resolve(__dirname, "./src/lib"),
       $views: path.resolve(__dirname, "./src/lib/views"),
+      $plugins: path.resolve(__dirname, "./src/lib/plugins"),
+      $stores: path.resolve(__dirname, "./src/lib/stores"),
     },
   },
 });

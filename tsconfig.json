@@ -17,7 +17,9 @@
     "baseUrl": "./",
     "paths": {
       "$/*": ["./src/lib/*"],
-      "$views/*": ["./src/lib/views/*"]
+      "$views/*": ["./src/lib/views/*"],
+      "$plugins/*": ["./src/lib/plugins/*"],
+      "$stores/*": ["./src/lib/stores/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],

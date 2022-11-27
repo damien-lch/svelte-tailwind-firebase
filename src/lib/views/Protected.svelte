@@ -1,6 +1,6 @@
 <script>
-  import { Link } from "svelte-navigator";
+  import { logout } from "$plugins/firebase/auth.firebase";
 </script>
 
 Protected View
-<Link to="/public">To Public</Link>
+<button on:click={logout}>Log out</button>

@@ -1,6 +1,7 @@
 <script>
-  import { Link } from "svelte-navigator";
+  import { googleSignin } from "$plugins/firebase/auth.firebase";
 </script>
 
 <div>Public View</div>
-<Link to="/protected">To Protected</Link>
+
+<button on:click={googleSignin}> Google Sign In </button>
