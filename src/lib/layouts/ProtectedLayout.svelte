@@ -3,7 +3,7 @@
   import { navigate } from "svelte-navigator";
 
   user.subscribe(($user) => {
-    if (!$user) navigate("/public");
+    if (!$user) navigate("/");
   });
 </script>
 

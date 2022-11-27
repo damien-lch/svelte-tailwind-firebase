@@ -12,7 +12,7 @@ export const currentRoute: Writable<Route> = writable();
 
 export const routes: Route[] = [
   {
-    path: "/public",
+    path: "/",
     component: () => import("$views/Public.svelte"),
     layout: "public",
   },
