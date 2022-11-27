@@ -7,6 +7,7 @@ specifiers:
   postcss: ^8.4.19
   svelte: ^3.52.0
   svelte-check: ^2.9.2
+  svelte-navigator: ^3.2.2
   svelte-preprocess: ^4.10.7
   tailwindcss: ^3.2.4
   tslib: ^2.4.0
@@ -20,6 +21,7 @@ devDependencies:
   postcss: 8.4.19
   svelte: 3.53.1
   svelte-check: 2.9.2_mocwzvuqzrhb37u7s4hjvvzl3i
+  svelte-navigator: 3.2.2_7dvewpees4iyn2tkw2qzal77a4
   svelte-preprocess: 4.10.7_mvbmsfnr3ibpjsbee6imjcb33m
   tailwindcss: 3.2.4_postcss@8.4.19
   tslib: 2.4.1
@@ -262,6 +264,10 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
+
+  /dedent-js/1.0.1:
+    resolution: {integrity: sha512-OUepMozQULMLUmhxS95Vudo0jb0UchLimi3+pQ2plj61Fcy8axbP9hbiD4Sz6DPqn6XG3kfmziVfQ1rSys5AJQ==}
     dev: true
 
   /deepmerge/4.2.2:
@@ -658,6 +664,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /lower-case/2.0.2:
+    resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
+    dependencies:
+      tslib: 2.4.1
+    dev: true
+
   /magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
@@ -721,6 +733,13 @@ packages:
     hasBin: true
     dev: true
 
+  /no-case/3.0.4:
+    resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
+    dependencies:
+      lower-case: 2.0.2
+      tslib: 2.4.1
+    dev: true
+
   /node-releases/2.0.6:
     resolution: {integrity: sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==}
     dev: true
@@ -751,6 +770,13 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       callsites: 3.1.0
+    dev: true
+
+  /pascal-case/3.1.2:
+    resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
+    dependencies:
+      no-case: 3.0.4
+      tslib: 2.4.1
     dev: true
 
   /path-is-absolute/1.0.1:
@@ -992,6 +1018,17 @@ packages:
       svelte: 3.53.1
     dev: true
 
+  /svelte-navigator/3.2.2_7dvewpees4iyn2tkw2qzal77a4:
+    resolution: {integrity: sha512-Xio4ohLUG1nQJ+ENNbLphXXu9L189fnI1WGg+2Q3CIMPe8Jm2ipytKQthdBs8t0mN7p3Eb03SE9hq0xZAqwQNQ==}
+    peerDependencies:
+      svelte: 3.x
+    dependencies:
+      svelte: 3.53.1
+      svelte2tsx: 0.1.193_7dvewpees4iyn2tkw2qzal77a4
+    transitivePeerDependencies:
+      - typescript
+    dev: true
+
   /svelte-preprocess/4.10.7_mvbmsfnr3ibpjsbee6imjcb33m:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
@@ -1047,6 +1084,18 @@ packages:
   /svelte/3.53.1:
     resolution: {integrity: sha512-Q4/hHkktZogGhN5iqxqSi9sjEVoe/NbIxX4hXEHoasTxj+TxEQVAq66LnDMdAZxjmsodkoI5F3slqsS68U7FNw==}
     engines: {node: '>= 8'}
+    dev: true
+
+  /svelte2tsx/0.1.193_7dvewpees4iyn2tkw2qzal77a4:
+    resolution: {integrity: sha512-vzy4YQNYDnoqp2iZPnJy7kpPAY6y121L0HKrSBjU/IWW7DQ6T7RMJed2VVHFmVYm0zAGYMDl9urPc6R4DDUyhg==}
+    peerDependencies:
+      svelte: ^3.24
+      typescript: ^4.1.2
+    dependencies:
+      dedent-js: 1.0.1
+      pascal-case: 3.1.2
+      svelte: 3.53.1
+      typescript: 4.9.3
     dev: true
 
   /tailwindcss/3.2.4_postcss@8.4.19:
