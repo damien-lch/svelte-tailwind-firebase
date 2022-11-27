@@ -72,6 +72,20 @@ Some times Vite auto-reload dev server with new .env file, but you can just kill
 pnpm run dev
 ```
 
+## Bonus
+
+### 1. Google oAuth on custom domain
+
+If you deploy this app on a web server, as vercel or netflix or whatever, you need to do an extra step for the Google oAuth to works.
+
+Go to [Firebase Google oAuth Settings](https://console.firebase.google.com/u/3/project/svelte-tailwind-firebase-9ff6a/authentication/settings)
+
+Then **Allowed Domains** and add your web app's domain.
+
+### 2. Vercel.json
+
+In order to makes the web app to works on a Vercel environment, I have to add a vercel.json inside the root folder. You can remove it if you don't use Vercel.
+
 ## Enjoy
 
 If you have some questions, you can contact me at **hello@neiwad.dev**.
