@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
 
   export let component;
-  export let params;
   let loadedComponent;
 
   onMount(() => {
@@ -13,5 +12,5 @@
 </script>
 
 {#if loadedComponent}
-  <svelte:component this={loadedComponent} {params} />
+  <svelte:component this={loadedComponent} />
 {/if}

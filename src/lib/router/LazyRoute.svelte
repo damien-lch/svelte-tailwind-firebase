@@ -6,6 +6,6 @@
   export let path;
 </script>
 
-<Route {path} let:params>
-  <Lazy {component} {params} />
+<Route {path}>
+  <Lazy {component} />
 </Route>
