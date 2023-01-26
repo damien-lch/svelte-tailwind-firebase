@@ -57,6 +57,7 @@ const firebaseConfig = {
 Inside your root folder, create a **.env** file and then add your credentials like that:
 
 ```javascript
+VITE_FB_API_KEY = ******
 VITE_FB_AUTH_DOMAIN = ******
 VITE_FB_PROJECT_ID = ******
 VITE_FB_STORAGE_BUCKET = ******
