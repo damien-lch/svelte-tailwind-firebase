@@ -77,7 +77,7 @@ pnpm run dev
 
 ### 1. Google oAuth on custom domain
 
-If you deploy this app on a web server, as vercel or netflix or whatever, you need to do an extra step for the Google oAuth to works.
+If you deploy this app on a web server, as Vercel or Netlify or whatever, you need to do an extra step for the Google oAuth to works.
 
 Go to [Firebase Google oAuth Settings](https://console.firebase.google.com/u/3/project/svelte-tailwind-firebase-9ff6a/authentication/settings)
 
